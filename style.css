@@ -1,0 +1,414 @@
+/* === Global Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === Header & Navigation === */
+header {
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    background-color: white;
+    color: black;
+    z-index: 100;
+    transition: padding 0.3s ease;
+}
+
+.hyperlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #555;
+}
+
+.nav-btn {
+    padding: 7px 20px;
+    background-color: transparent;
+    color: black;
+    font-size: 0.625rem;
+    border: 1px solid black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* === Main Content === */
+.p-part {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 150px;
+    background-color: #2B263F;
+    color: white;
+}
+
+.p-btn {
+    text-decoration: none;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.p-btn:hover {
+    background-color: white;
+    color: #2B263F;
+}
+
+.desk-intro-img {
+    height: 500px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.value img {
+    height: 70px;
+    width: 70px;
+}
+
+/* === How We Work Section === */
+.how-we-work {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 150px;
+}
+
+.box {
+    padding: 0 100px;
+    color: white;
+    border: 1px solid white;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #2B263F;
+    transition: padding 0.3s ease, flex-direction 0.3s ease, height 0.3s ease, text-align 0.3s ease;
+}
+
+.inside-text {
+    font-family: serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+    transition: font-size 0.3s ease, width 0.3s ease, text-align 0.3s ease;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-btn {
+    text-decoration: none;
+    color: white;
+    padding: 7px 20px;
+    border: 1px solid white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.how-btn:hover {
+    background-color: white;
+    color: #2B263F;
+}
+
+/* === Footer === */
+footer {
+    height: 300px;
+    width: 100%;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    transition: padding 0.3s ease;
+}
+
+.title-top {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.586);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* === Tables === */
+table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+th {
+    width: 1000px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+th, td {
+    padding-bottom: 10px;
+}
+
+td {
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* === Fonts === */
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+/* === Ripple Decor Section === */
+/* Position ripple images behind other content and set layering */
+.ripple-decor img {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.ripple-top {
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: auto;
+    z-index: 90; /* Positioned above general background but below nav */
+}
+
+.ripple-bottom {
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: auto;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 40px;
+    }
+    .p-part {
+        padding: 0 50px;
+        text-align: center;
+    }
+    .desk-intro-img {
+        position: static;
+        max-width: 80%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    .container {
+        padding: 30px 50px;
+    }
+    .how-we-work {
+        padding: 30px 50px;
+    }
+    .values {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .ripple-top,
+    .ripple-bottom {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 20px;
+        justify-content: center;
+        position: relative;
+    }
+    ul {
+        display: none;
+    }
+    .hyperlinks.show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 4px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 110;
+    }
+    .p-part {
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .desk-intro-img {
+        position: static;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    .container {
+        padding: 20px;
+        align-items: center;
+    }
+    .values {
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-we-work {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+    }
+    .box {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .inside-text {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .ripple-top,
+    .ripple-bottom {
+        width: 150px;
+    }
+}
+
+/* Hamburger button styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+}
+
+/* Hyperlinks show menu styles */
+.hyperlinks.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
